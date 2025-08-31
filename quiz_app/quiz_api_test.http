@@ -1,0 +1,24 @@
+### Get all quizzes
+GET http://127.0.0.1:8000/api/quizzes/
+Accept: application/json
+
+###
+
+### Create a new quiz
+POST http://127.0.0.1:8000/api/quizzes/
+Content-Type: application/json
+Authorization: Token your_token_here
+
+{
+  "title": "Python Basics",
+  "description": "Test your Python knowledge",
+  "category": "Programming",
+  "user": 1
+}
+
+###
+
+### Get quiz by ID
+GET http://127.0.0.1:8000/api/quizzes/1/
+Accept: application/json
+Authorization: Token your_token_here

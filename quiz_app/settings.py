@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'quiz'
+    
+
 ]
 
 MIDDLEWARE = [
@@ -98,6 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'quiz.User'  
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
